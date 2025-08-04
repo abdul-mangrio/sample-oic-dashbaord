@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NS90 Integration Record Analysis</title>
+    <link rel="stylesheet" href="dashboard-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-left">
+                <button class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <h1>NS90 Integration Record Analysis</h1>
+            </div>
+            <div class="header-right">
+                <div class="header-actions">
+                    <button class="header-btn" onclick="refreshData()" title="Refresh">
+                        <i class="fas fa-sync-alt"></i>
+                    </button>
+                    <button class="header-btn" title="Sync Data">
+                        <i class="fas fa-file-export"></i>
+                    </button>
+                    <button class="header-btn" title="Chat">
+                        <i class="fas fa-comment"></i>
+                    </button>
+                    <button class="header-btn" title="Share">
+                        <i class="fas fa-external-link-alt"></i>
+                    </button>
+                    <button class="header-btn" title="Profile">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="header-btn" title="Bookmark">
+                        <i class="fas fa-bookmark"></i>
+                    </button>
+                </div>
+                <div class="user-profile">
+                    <span class="user-initials">AM</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Tabs -->
+        <div class="main-tabs">
+            <button class="main-tab-btn active" data-tab="customer">
+                Customer
+            </button>
+            <button class="main-tab-btn" data-tab="deposit">
+                Deposit
+            </button>
+            <button class="main-tab-btn" data-tab="order">
+                Order
+            </button>
+            <button class="main-tab-btn" data-tab="fulfillment">
+                Fulfillment
+            </button>
+            <button class="main-tab-btn" data-tab="refund">
+                Refund
+            </button>
+            <button class="main-tab-btn" data-tab="products">
+                Products
+            </button>
+        </div>
+
+        <!-- Tab Filter Bar -->
+        <div class="tab-filter-bar">
+            <div class="filter-left">
+                <div class="filter-info">
+                    <span class="filter-label">Date</span>
+                    <span class="filter-separator">|</span>
+                    <span class="filter-value">Last 15 Days</span>
+                    <button class="remove-filter-btn" title="Remove Filter">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <button class="add-filter-btn" title="Add Filter">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+            <div class="filter-actions">
+                <button class="filter-icon-btn" title="Filter">
+                    <i class="fas fa-filter"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="charts-section" id="chartsSection">
+            <div class="charts-header">
+                <h3>Analytics Overview</h3>
+                <button class="toggle-charts-btn" onclick="toggleCharts()" id="toggleChartsBtn">
+                    <i class="fas fa-minus"></i>
+                </button>
+            </div>
+            <div class="charts-content" id="chartsContent">
+                <!-- Summary Boxes -->
+                <div class="summary-boxes">
+                    <div class="summary-box">
+                        <div class="count" id="totalRecordsCount">1,247</div>
+                        <div class="separator">|</div>
+                        <h4>Total Records</h4>
+                    </div>
+                    <div class="summary-box">
+                        <div class="count" id="totalSuccessCount">1,156</div>
+                        <div class="separator">|</div>
+                        <h4>Total Success</h4>
+                    </div>
+                    <div class="summary-box">
+                        <div class="count" id="totalReadyCount">67</div>
+                        <div class="separator">|</div>
+                        <h4>Total Ready</h4>
+                    </div>
+                    <div class="summary-box">
+                        <div class="count" id="totalFailedCount">24</div>
+                        <div class="separator">|</div>
+                        <h4>Total Failed</h4>
+                    </div>
+                </div>
+                
+                <!-- Charts Grid -->
+                <div class="charts-grid">
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h3>Total Record Count by Prepared Date</h3>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="totalRecordsChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <div class="chart-header">
+                            <h3>Failed Record Count by Prepared Date</h3>
+                        </div>
+                        <div class="chart-wrapper">
+                            <canvas id="failedRecordsChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters and Search -->
+        <div class="filters-container">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search records...">
+            </div>
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="dateFrom">From:</label>
+                    <input type="date" id="dateFrom">
+                </div>
+                <div class="filter-group">
+                    <label for="dateTo">To:</label>
+                    <input type="date" id="dateTo">
+                </div>
+                <div class="filter-group">
+                    <label for="statusFilter">Status:</label>
+                    <select id="statusFilter">
+                        <option value="">All Status</option>
+                        <option value="ready">Ready</option>
+                        <option value="success">Success</option>
+                        <option value="failed">Failed</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="stageFilter">Stage:</label>
+                    <select id="stageFilter">
+                        <option value="">All Stages</option>
+                        <option value="landed">Landed</option>
+                        <option value="prepared">Prepared</option>
+                        <option value="target">Target</option>
+                    </select>
+                </div>
+                <button class="apply-filters-btn" onclick="applyFilters()">
+                    <i class="fas fa-filter"></i> Apply Filters
+                </button>
+                <button class="clear-filters-btn" onclick="clearFilters()">
+                    <i class="fas fa-times"></i> Clear
+                </button>
+            </div>
+        </div>
+
+        <!-- Summary Table Section -->
+        <div class="summary-section">
+            <div class="section-header">
+                <h3>Integration Records Status - Summary</h3>
+            </div>
+            <div class="summary-table-container">
+                <table class="summary-table">
+                    <thead>
+                        <tr>
+                            <th>Flow</th>
+                            <th>Internal ID</th>
+                            <th>External ID</th>
+                            <th>Name</th>
+                            <th id="emailCustomerHeader">Email</th>
+                            <th id="customerHeader" style="display: none;">Customer</th>
+                            <th id="amountHeader" style="display: none;">Amount</th>
+                            <th id="taxTotalHeader" style="display: none;">Tax Total</th>
+                            <th id="paymentMethodHeader" style="display: none;">Payment Method</th>
+                            <th id="paymentIdHeader" style="display: none;">Payment ID</th>
+                            <th id="matrixTypeHeader" style="display: none;">Matrix Type</th>
+                            <th>Date</th>
+                            <th>Stage</th>
+                            <th>Status</th>
+                            <th>Process ID</th>
+                        </tr>
+                    </thead>
+                    <tbody id="summaryTableBody">
+                        <!-- Data will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Line Items Container -->
+        <div class="line-items-container" id="lineItemsContainer" style="display: none;">
+            <div class="section-header">
+                <h3 id="lineItemsTitle">Line Items</h3>
+                <button class="close-line-items-btn" onclick="closeLineItems()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+
+            
+            <!-- Line Items Section -->
+            <div id="lineItemsSection" style="display: none;">
+                <div class="section-header">
+                    <h4>Line Items</h4>
+                </div>
+                <div class="line-items-table-wrapper">
+                    <table id="lineItemsTable" class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ITEM ID</th>
+                                <th>NAME</th>
+                                <th>QUANTITY</th>
+                                <th>AMOUNT</th>
+                                <th>TAX LOCATION</th>
+                                <th>TOTAL</th>
+                            </tr>
+                        </thead>
+                        <tbody id="lineItemsTableBody">
+                            <!-- Line items will be populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Associated Records Section -->
+            <div id="associatedRecordsSection" style="display: none;">
+                <div class="section-header">
+                    <h4>Associated Records</h4>
+                </div>
+                <div class="associated-records-wrapper">
+                    <table id="associatedRecordsTable" class="data-table">
+                        <thead>
+                            <tr>
+                                <th>TYPE</th>
+                                <th>NAME</th>
+                                <th>STATUS</th>
+                                <th>DATE</th>
+                            </tr>
+                        </thead>
+                        <tbody id="associatedRecordsTableBody">
+                            <!-- Associated records will be populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Overlay -->
+        <div class="loading-overlay" id="loadingOverlay">
+            <div class="loading-spinner">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Loading...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard-script.js"></script>
+</body>
+</html> 
