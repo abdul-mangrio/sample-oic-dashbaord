@@ -118,8 +118,8 @@ const sampleData = {
         { 
             flow: 'SHP → NS', 
             internal_id: '12553', 
-            external_id: 'mhi-ns90-test-store.SHP.CustomerDeposit_7963945107543', 
-            name: '12553', 
+            external_id: 'mhi-ns90-test-store.SHP.Deposit_7963945107601', 
+            name: 'CD-12553', 
             customer_name: 'Evita Evans',
             amount: 1500.00,
             payment_method: 'Credit Card',
@@ -134,8 +134,8 @@ const sampleData = {
         { 
             flow: 'SHP → NS', 
             internal_id: '12554', 
-            external_id: 'mhi-ns90-test-store.SHP.CustomerDeposit_7963945107544', 
-            name: '12554', 
+            external_id: 'mhi-ns90-test-store.SHP.Deposit_7963945107602', 
+            name: 'CD-12554', 
             customer_name: 'Marcus Rodriguez',
             amount: 2750.50,
             payment_method: 'Bank Transfer',
@@ -150,8 +150,8 @@ const sampleData = {
         { 
             flow: 'SHP → NS', 
             internal_id: '12555', 
-            external_id: 'mhi-ns90-test-store.SHP.CustomerDeposit_7963945107545', 
-            name: '12555', 
+            external_id: 'mhi-ns90-test-store.SHP.Deposit_7963945107603', 
+            name: 'CD-12555', 
             customer_name: 'Sarah Johnson',
             amount: 899.99,
             payment_method: 'PayPal',
@@ -166,8 +166,8 @@ const sampleData = {
         { 
             flow: 'SHP → NS', 
             internal_id: '12556', 
-            external_id: 'mhi-ns90-test-store.SHP.CustomerDeposit_7963945107546', 
-            name: '12556', 
+            external_id: 'mhi-ns90-test-store.SHP.Deposit_7963945107604', 
+            name: 'CD-12556', 
             customer_name: 'David Chen',
             amount: 2200.00,
             payment_method: 'Credit Card',
@@ -182,8 +182,8 @@ const sampleData = {
         { 
             flow: 'SHP → NS', 
             internal_id: '12557', 
-            external_id: 'mhi-ns90-test-store.SHP.CustomerDeposit_7963945107547', 
-            name: '12557', 
+            external_id: 'mhi-ns90-test-store.SHP.Deposit_7963945107605', 
+            name: 'CD-12557', 
             customer_name: 'Lisa Thompson',
             amount: 1800.75,
             payment_method: 'Bank Transfer',
@@ -198,8 +198,8 @@ const sampleData = {
         { 
             flow: 'SHP → NS', 
             internal_id: '12558', 
-            external_id: 'mhi-ns90-test-store.SHP.CustomerDeposit_7963945107548', 
-            name: '12558', 
+            external_id: 'mhi-ns90-test-store.SHP.Deposit_7963945107606', 
+            name: 'CD-12558', 
             customer_name: 'Michael Brown',
             amount: 3200.00,
             payment_method: 'Credit Card',
@@ -214,8 +214,8 @@ const sampleData = {
         { 
             flow: 'SHP → NS', 
             internal_id: '12559', 
-            external_id: 'mhi-ns90-test-store.SHP.CustomerDeposit_7963945107549', 
-            name: '12559', 
+            external_id: 'mhi-ns90-test-store.SHP.Deposit_7963945107607', 
+            name: 'CD-12559', 
             customer_name: 'Jennifer Davis',
             amount: 950.25,
             payment_method: 'PayPal',
@@ -230,8 +230,8 @@ const sampleData = {
         { 
             flow: 'SHP → NS', 
             internal_id: '12560', 
-            external_id: 'mhi-ns90-test-store.SHP.CustomerDeposit_7963945107550', 
-            name: '12560', 
+            external_id: 'mhi-ns90-test-store.SHP.Deposit_7963945107608', 
+            name: 'CD-12560', 
             customer_name: 'Robert Wilson',
             amount: 1650.80,
             payment_method: 'Bank Transfer',
@@ -246,8 +246,8 @@ const sampleData = {
         { 
             flow: 'SHP → NS', 
             internal_id: '12561', 
-            external_id: 'mhi-ns90-test-store.SHP.CustomerDeposit_7963945107551', 
-            name: '12561', 
+            external_id: 'mhi-ns90-test-store.SHP.Deposit_7963945107609', 
+            name: 'CD-12561', 
             customer_name: 'Amanda Foster',
             amount: 2800.00,
             payment_method: 'Credit Card',
@@ -262,8 +262,8 @@ const sampleData = {
         { 
             flow: 'SHP → NS', 
             internal_id: '12562', 
-            external_id: 'mhi-ns90-test-store.SHP.CustomerDeposit_7963945107552', 
-            name: '12562', 
+            external_id: 'mhi-ns90-test-store.SHP.Deposit_7963945107610', 
+            name: 'CD-12562', 
             customer_name: 'Christopher Lee',
             amount: 1200.50,
             payment_method: 'PayPal',
@@ -280,8 +280,10 @@ const sampleData = {
         { 
             flow: 'SHP → NS', 
             internal_id: '12563', 
-            external_id: 'mhi-ns90-test-store.SHP.Order_7963945107601', 
+            external_id: 'mhi-ns90-test-store.SHP.Order_77787878', 
             name: 'SO-1234', 
+            po_number: '#7874',
+            subsidiary: 'US - West',
             customer_name: 'Evita Evans',
             amount: 1495.96,
             tax_total: 129.97,
@@ -295,8 +297,10 @@ const sampleData = {
         { 
             flow: 'SHP → NS', 
             internal_id: '12564', 
-            external_id: 'mhi-ns90-test-store.SHP.Order_7963945107602', 
+            external_id: 'mhi-ns90-test-store.SHP.Order_77787879', 
             name: 'SO-1235', 
+            po_number: '#9234',
+            subsidiary: 'US - East',
             customer_name: 'Marcus Rodriguez',
             amount: 149.99,
             tax_total: 15.00,
@@ -310,8 +314,10 @@ const sampleData = {
         { 
             flow: 'SHP → NS', 
             internal_id: '12565', 
-            external_id: 'mhi-ns90-test-store.SHP.Order_7963945107603', 
+            external_id: 'mhi-ns90-test-store.SHP.Order_77787880', 
             name: 'SO-1236', 
+            po_number: '#4567',
+            subsidiary: 'Headquarter',
             customer_name: 'Sarah Johnson',
             amount: 599.99,
             tax_total: 60.00,
@@ -321,34 +327,118 @@ const sampleData = {
             error_msg: 'Customer not found', 
             last_update: '2024-01-15 09:05:00',
             process_id: 'ord3p9qR5TgVdEfCNWg3rq0agMy'
+        },
+        { 
+            flow: 'SHP → NS', 
+            internal_id: '12573', 
+            external_id: 'mhi-ns90-test-store.SHP.Order_77787883', 
+            name: 'SO-1237', 
+            po_number: '#1234',
+            subsidiary: 'US - West',
+            customer_name: 'Jennifer Davis',
+            amount: 899.99,
+            tax_total: 90.00,
+            date: '2024-01-15 09:30:00', 
+            stage: 'prepared', 
+            status: 'success', 
+            error_msg: '', 
+            last_update: '2024-01-15 09:35:00',
+            process_id: 'ord4i9jK2LgMdEfCNWg3rq0agSt'
+        },
+        { 
+            flow: 'SHP → NS', 
+            internal_id: '12574', 
+            external_id: 'mhi-ns90-test-store.SHP.Order_77787884', 
+            name: 'SO-1238', 
+            po_number: '#5678',
+            subsidiary: 'US - East',
+            customer_name: 'Robert Wilson',
+            amount: 1299.99,
+            tax_total: 130.00,
+            date: '2024-01-15 10:00:00', 
+            stage: 'target', 
+            status: 'ready', 
+            error_msg: '', 
+            last_update: '2024-01-15 10:05:00',
+            process_id: 'ord5u7vW0XgYdEfCNWg3rq0agUv'
+        },
+        { 
+            flow: 'SHP → NS', 
+            internal_id: '12575', 
+            external_id: 'mhi-ns90-test-store.SHP.Order_77787885', 
+            name: 'SO-1239', 
+            po_number: '#9012',
+            subsidiary: 'Headquarter',
+            customer_name: 'Amanda Foster',
+            amount: 450.50,
+            tax_total: 45.05,
+            date: '2024-01-15 10:30:00', 
+            stage: 'landed', 
+            status: 'success', 
+            error_msg: '', 
+            last_update: '2024-01-15 10:35:00',
+            process_id: 'ord6x1yZ4AgBdEfCNWg3rq0agWx'
+        },
+        { 
+            flow: 'SHP → NS', 
+            internal_id: '12576', 
+            external_id: 'mhi-ns90-test-store.SHP.Order_77787886', 
+            name: 'SO-1240', 
+            po_number: '#3456',
+            subsidiary: 'US - West',
+            customer_name: 'Christopher Lee',
+            amount: 750.25,
+            tax_total: 75.03,
+            date: '2024-01-15 11:00:00', 
+            stage: 'prepared', 
+            status: 'failed', 
+            error_msg: 'Payment declined', 
+            last_update: '2024-01-15 11:05:00',
+            process_id: 'ord7z5aB7CgDdEfCNWg3rq0agYz'
         }
     ],
     fulfillment: [
         { 
-            flow: 'NS → SHP', 
+            flow: 'SHP → NS', 
             internal_id: '12566', 
-            external_id: 'mhi-ns90-test-store.NS.Fulfillment_7963945107701', 
-            name: 'FF-4567', 
-            customer_name: 'Evita Evans',
-            date: '2024-01-15 07:00:00', 
+            external_id: '77787881', 
+            name: 'IF-12566', 
+            tracking_number: '1111112121',
+            tracking_company: 'FedEx',
+            date: '2024-01-15 09:00:00', 
             stage: 'prepared', 
-            status: 'success', 
+            status: 'Picked', 
             error_msg: '', 
-            last_update: '2024-01-15 07:05:00',
+            last_update: '2024-01-15 09:05:00',
             process_id: 'ful1hujv4HEgEfCNWg3rq0agKw'
         },
         { 
-            flow: 'NS → SHP', 
-            internal_id: '12567', 
-            external_id: 'mhi-ns90-test-store.NS.Fulfillment_7963945107702', 
-            name: 'FF-4568', 
-            customer_name: 'Marcus Rodriguez',
-            date: '2024-01-15 07:30:00', 
-            stage: 'target', 
-            status: 'ready', 
+            flow: 'SHP → NS', 
+            internal_id: '12568', 
+            external_id: '77787882', 
+            name: 'IF-12568', 
+            tracking_number: '2222223232',
+            tracking_company: 'UPS',
+            date: '2024-01-15 10:00:00', 
+            stage: 'prepared', 
+            status: 'Packed', 
             error_msg: '', 
-            last_update: '2024-01-15 07:35:00',
-            process_id: 'ful2k2mN8FgHdEfCNWg3rq0agLx'
+            last_update: '2024-01-15 10:05:00',
+            process_id: 'ful2hujv4HEgEfCNWg3rq0agKw'
+        },
+        { 
+            flow: 'SHP → NS', 
+            internal_id: '12570', 
+            external_id: '77787883', 
+            name: 'IF-12570', 
+            tracking_number: '3333334343',
+            tracking_company: 'DHL',
+            date: '2024-01-15 11:00:00', 
+            stage: 'prepared', 
+            status: 'Shipped', 
+            error_msg: '', 
+            last_update: '2024-01-15 11:05:00',
+            process_id: 'ful3hujv4HEgEfCNWg3rq0agKw'
         }
     ],
     refund: [
@@ -428,10 +518,10 @@ const sampleData = {
 
 // Sample line items data
 const sampleLineItems = {
-    'mhi-ns90-test-store.SHP.Order_7963945107601': [
+    'mhi-ns90-test-store.SHP.Order_77787878': [
         { 
             internal_id: '12563', 
-            external_id: 'mhi-ns90-test-store.SHP.Order_7963945107601',
+            external_id: 'mhi-ns90-test-store.SHP.Order_77787878',
             item_id: 'LAPTOP001', 
             name: 'Laptop Pro 15"', 
             sku: 'LAPTOP-PRO-15-2024',
@@ -445,7 +535,7 @@ const sampleLineItems = {
         },
         { 
             internal_id: '12563', 
-            external_id: 'mhi-ns90-test-store.SHP.Order_7963945107601',
+            external_id: 'mhi-ns90-test-store.SHP.Order_77787878',
             item_id: 'MOUSE001', 
             name: 'Wireless Mouse', 
             sku: 'MOUSE-WIRELESS-001',
@@ -458,10 +548,10 @@ const sampleLineItems = {
             shp_line_id: '15769064898648'
         }
     ],
-    'mhi-ns90-test-store.SHP.Order_7963945107602': [
+    'mhi-ns90-test-store.SHP.Order_77787879': [
         { 
             internal_id: '12564', 
-            external_id: 'mhi-ns90-test-store.SHP.Order_7963945107602',
+            external_id: 'mhi-ns90-test-store.SHP.Order_77787879',
             item_id: 'KEYBOARD001', 
             name: 'Gaming Keyboard', 
             sku: 'KEYBOARD-GAMING-001',
@@ -474,10 +564,10 @@ const sampleLineItems = {
             shp_line_id: '15769064898649'
         }
     ],
-    'mhi-ns90-test-store.SHP.Order_7963945107603': [
+    'mhi-ns90-test-store.SHP.Order_77787880': [
         { 
             internal_id: '12565', 
-            external_id: 'mhi-ns90-test-store.SHP.Order_7963945107603',
+            external_id: 'mhi-ns90-test-store.SHP.Order_77787880',
             item_id: 'MONITOR001', 
             name: '4K Monitor', 
             sku: 'MONITOR-4K-001',
@@ -490,67 +580,204 @@ const sampleLineItems = {
             shp_line_id: '15769064898650'
         }
     ],
-    'mhi-ns90-test-store.NS.Fulfillment_7963945107701': [
+    'mhi-ns90-test-store.SHP.Order_77787883': [
         { 
-            internal_id: '12566', 
-            external_id: 'mhi-ns90-test-store.NS.Fulfillment_7963945107701',
-            item_id: 'LAPTOP001', 
-            name: 'Laptop Pro 15"', 
-            sku: 'LAPTOP-PRO-15-2024',
+            internal_id: '12573', 
+            external_id: 'mhi-ns90-test-store.SHP.Order_77787883',
+            item_id: 'HEADPHONES001', 
+            name: 'Wireless Headphones', 
+            sku: 'HEADPHONES-WIRELESS-001',
             price_level: 'Standard',
-            price: 1299.99,
+            price: 899.99,
             quantity: 1, 
-            amount: 1299.99, 
+            amount: 899.99, 
             tax_code: 'CA_TAX', 
-            tax_amount: 129.99,
+            tax_amount: 90.00,
             shp_line_id: '15769064898651'
         }
     ],
-    'mhi-ns90-test-store.NS.Fulfillment_7963945107702': [
+    'mhi-ns90-test-store.SHP.Order_77787884': [
+        { 
+            internal_id: '12574', 
+            external_id: 'mhi-ns90-test-store.SHP.Order_77787884',
+            item_id: 'TABLET001', 
+            name: 'iPad Pro 12"', 
+            sku: 'TABLET-IPAD-PRO-12',
+            price_level: 'Custom',
+            price: 1299.99,
+            quantity: 1, 
+            amount: 1299.99, 
+            tax_code: 'NY_TAX', 
+            tax_amount: 130.00,
+            shp_line_id: '15769064898652'
+        }
+    ],
+    'mhi-ns90-test-store.SHP.Order_77787885': [
+        { 
+            internal_id: '12575', 
+            external_id: 'mhi-ns90-test-store.SHP.Order_77787885',
+            item_id: 'WATCH001', 
+            name: 'Smart Watch', 
+            sku: 'WATCH-SMART-001',
+            price_level: 'Standard',
+            price: 450.50,
+            quantity: 1, 
+            amount: 450.50, 
+            tax_code: 'FL_TAX', 
+            tax_amount: 45.05,
+            shp_line_id: '15769064898653'
+        }
+    ],
+    'mhi-ns90-test-store.SHP.Order_77787886': [
+        { 
+            internal_id: '12576', 
+            external_id: 'mhi-ns90-test-store.SHP.Order_77787886',
+            item_id: 'CAMERA001', 
+            name: 'Digital Camera', 
+            sku: 'CAMERA-DIGITAL-001',
+            price_level: 'Standard',
+            price: 750.25,
+            quantity: 1, 
+            amount: 750.25, 
+            tax_code: 'WA_TAX', 
+            tax_amount: 75.03,
+            shp_line_id: '15769064898654'
+        }
+    ],
+    '77787881': [
+        { 
+            internal_id: '12566', 
+            external_id: '77787881',
+            item_id: 'LAPTOP001', 
+            name: 'Laptop Pro 15"', 
+            sku: 'LAPTOP-PRO-15-2024',
+            quantity: 1, 
+            amount: 1299.99,
+            location: 'Warehouse A'
+        },
         { 
             internal_id: '12567', 
-            external_id: 'mhi-ns90-test-store.NS.Fulfillment_7963945107702',
+            external_id: '77787881',
             item_id: 'MOUSE001', 
             name: 'Wireless Mouse', 
             sku: 'MOUSE-WIRELESS-001',
-            price_level: 'Custom',
-            price: 29.99,
             quantity: 2, 
-            amount: 59.98, 
-            tax_code: 'NY_TAX', 
-            tax_amount: 6.00,
-            shp_line_id: '15769064898652'
+            amount: 49.99,
+            location: 'Warehouse B'
+        },
+        { 
+            internal_id: '12568', 
+            external_id: '77787881',
+            item_id: 'KEYBOARD001', 
+            name: 'Gaming Keyboard', 
+            sku: 'KEYBOARD-GAMING-001',
+            quantity: 1, 
+            amount: 149.99,
+            location: 'Warehouse C'
+        }
+    ],
+    '77787882': [
+        { 
+            internal_id: '12569', 
+            external_id: '77787882',
+            item_id: 'MOUSE001', 
+            name: 'Wireless Mouse', 
+            sku: 'MOUSE-WIRELESS-001',
+            quantity: 3, 
+            amount: 49.99,
+            location: 'Warehouse B'
+        },
+        { 
+            internal_id: '12570', 
+            external_id: '77787882',
+            item_id: 'HEADPHONES001', 
+            name: 'Bluetooth Headphones', 
+            sku: 'HEADPHONES-BT-001',
+            quantity: 1, 
+            amount: 199.99,
+            location: 'Warehouse A'
+        }
+    ],
+    '77787883': [
+        { 
+            internal_id: '12571', 
+            external_id: '77787883',
+            item_id: 'KEYBOARD001', 
+            name: 'Gaming Keyboard', 
+            sku: 'KEYBOARD-GAMING-001',
+            quantity: 2, 
+            amount: 149.99,
+            location: 'Warehouse C'
+        },
+        { 
+            internal_id: '12572', 
+            external_id: '77787883',
+            item_id: 'MONITOR001', 
+            name: '27" Gaming Monitor', 
+            sku: 'MONITOR-GAMING-27',
+            quantity: 1, 
+            amount: 399.99,
+            location: 'Warehouse A'
+        },
+        { 
+            internal_id: '12573', 
+            external_id: '77787883',
+            item_id: 'WEBCAM001', 
+            name: 'HD Webcam', 
+            sku: 'WEBCAM-HD-001',
+            quantity: 1, 
+            amount: 89.99,
+            location: 'Warehouse B'
         }
     ]
 };
 
 // Sample associated records data
 const sampleAssociatedRecords = {
-    'mhi-ns90-test-store.SHP.Order_7963945107601': [
-        { type: 'Deposit', name: 'Customer Deposit against Evita Evans', status: 'Success', date: '2024-01-15 10:30:00' },
-        { type: 'Fulfillment', name: 'FF-4567', status: 'Success', date: '2024-01-15 07:00:00' },
-        { type: 'Invoice', name: 'INV-001', status: 'Success', date: '2024-01-15 08:10:00' }
+    'mhi-ns90-test-store.SHP.Order_77787878': [
+        { type: 'Customer Deposit', internal_id: '12545', external_id: 'CD-4545', date: '2024-01-15 10:30:00', name: 'CD-4545', amount: 299.99, applied_on: 'mhi-ns90-test-store.SHP.Deposit_7963945107601', status: 'Deposited' },
+        { type: 'Fulfillment', internal_id: '12553', external_id: 'IF-7874', date: '2024-01-15 07:00:00', name: 'IF-7874', amount: null, applied_on: 'N/A', status: 'Picked' },
+        { type: 'Invoice', internal_id: '12563', external_id: 'INV-4547', date: '2024-01-15 08:10:00', name: 'INV-4547', amount: 299.99, applied_on: 'N/A', status: 'Open' },
+        { type: 'Customer Refund', internal_id: '12572', external_id: 'CR-001', date: '2024-01-15 06:05:00', name: 'CR-001', amount: 150.00, applied_on: 'mhi-ns90-test-store.SHP.Deposit_7963945107601', status: 'Success' }
     ],
-    'mhi-ns90-test-store.SHP.Order_7963945107602': [
-        { type: 'Deposit', name: 'Customer Deposit against Marcus Rodriguez', status: 'Success', date: '2024-01-15 11:15:00' },
-        { type: 'Invoice', name: 'INV-002', status: 'Ready', date: '2024-01-15 08:40:00' }
+    'mhi-ns90-test-store.SHP.Order_77787879': [
+        { type: 'Customer Deposit', internal_id: '12566', external_id: 'CD-4546', date: '2024-01-15 11:15:00', name: 'CD-4546', amount: 199.99, applied_on: 'mhi-ns90-test-store.SHP.Deposit_7963945107602', status: 'Fully Applied' },
+        { type: 'Invoice', internal_id: '12568', external_id: 'INV-4548', date: '2024-01-15 08:40:00', name: 'INV-4548', amount: 199.99, applied_on: 'N/A', status: 'Paid In Full' },
+        { type: 'Customer Refund', internal_id: '12573', external_id: 'CR-002', date: '2024-01-15 06:35:00', name: 'CR-002', amount: 75.50, applied_on: 'mhi-ns90-test-store.SHP.Deposit_7963945107602', status: 'Ready' }
     ],
-    'mhi-ns90-test-store.NS.Fulfillment_7963945107701': [
-        { type: 'Order', name: 'SO-1234', status: 'Success', date: '2024-01-15 08:00:00' },
-        { type: 'Invoice', name: 'INV-001', status: 'Success', date: '2024-01-15 08:10:00' }
+    '77787881': [
+        { type: 'Order', internal_id: '12570', external_id: 'SO-1234', date: '2024-01-15 08:00:00', name: 'SO-1234', amount: 299.99, applied_on: 'N/A', status: 'Success' },
+        { type: 'Invoice', internal_id: '12563', external_id: 'INV-4547', date: '2024-01-15 08:10:00', name: 'INV-4547', amount: 299.99, applied_on: 'N/A', status: 'Open' }
     ],
-    'mhi-ns90-test-store.NS.Fulfillment_7963945107702': [
-        { type: 'Order', name: 'SO-1235', status: 'Ready', date: '2024-01-15 08:30:00' }
+    '77787882': [
+        { type: 'Order', internal_id: '12571', external_id: 'SO-1235', date: '2024-01-15 08:30:00', name: 'SO-1235', amount: 199.99, applied_on: 'N/A', status: 'Ready' }
+    ],
+    'mhi-ns90-test-store.SHP.Order_77787883': [
+        { type: 'Customer Deposit', internal_id: '12577', external_id: 'CD-4547', date: '2024-01-15 12:15:00', name: 'CD-4547', amount: 899.99, applied_on: 'mhi-ns90-test-store.SHP.Deposit_7963945107603', status: 'Deposited' },
+        { type: 'Invoice', internal_id: '12578', external_id: 'INV-4549', date: '2024-01-15 09:40:00', name: 'INV-4549', amount: 899.99, applied_on: 'N/A', status: 'Open' },
+        { type: 'Customer Refund', internal_id: '12579', external_id: 'CR-003', date: '2024-01-15 07:05:00', name: 'CR-003', amount: 100.00, applied_on: 'mhi-ns90-test-store.SHP.Deposit_7963945107603', status: 'Success' }
+    ],
+    'mhi-ns90-test-store.SHP.Order_77787884': [
+        { type: 'Customer Deposit', internal_id: '12580', external_id: 'CD-4548', date: '2024-01-15 13:00:00', name: 'CD-4548', amount: 1299.99, applied_on: 'mhi-ns90-test-store.SHP.Deposit_7963945107604', status: 'Fully Applied' },
+        { type: 'Fulfillment', internal_id: '12581', external_id: 'IF-7875', date: '2024-01-15 10:10:00', name: 'IF-7875', amount: null, applied_on: 'N/A', status: 'Packed' }
+    ],
+    'mhi-ns90-test-store.SHP.Order_77787885': [
+        { type: 'Customer Deposit', internal_id: '12582', external_id: 'CD-4549', date: '2024-01-15 13:30:00', name: 'CD-4549', amount: 450.50, applied_on: 'mhi-ns90-test-store.SHP.Deposit_7963945107605', status: 'Deposited' },
+        { type: 'Invoice', internal_id: '12583', external_id: 'INV-4550', date: '2024-01-15 10:40:00', name: 'INV-4550', amount: 450.50, applied_on: 'N/A', status: 'Paid In Full' }
+    ],
+    'mhi-ns90-test-store.SHP.Order_77787886': [
+        { type: 'Customer Deposit', internal_id: '12584', external_id: 'CD-4550', date: '2024-01-15 14:00:00', name: 'CD-4550', amount: 750.25, applied_on: 'mhi-ns90-test-store.SHP.Deposit_7963945107606', status: 'Not Deposited' },
+        { type: 'Customer Refund', internal_id: '12585', external_id: 'CR-004', date: '2024-01-15 07:35:00', name: 'CR-004', amount: 200.00, applied_on: 'mhi-ns90-test-store.SHP.Deposit_7963945107606', status: 'Ready' }
     ],
     'mhi-ns90-test-store.SHP.Refund_7963945107801': [
-        { type: 'Customer Refund', name: 'Customer Refund against Evita Evans', status: 'Success', date: '2024-01-15 06:05:00' },
-        { type: 'Original Order', name: 'SO-1234', status: 'Success', date: '2024-01-15 08:00:00' },
-        { type: 'Customer Deposit', name: 'Customer Deposit against Evita Evans', status: 'Success', date: '2024-01-15 10:30:00' }
+        { type: 'Customer Refund', internal_id: '12572', external_id: 'CR-001', date: '2024-01-15 06:05:00', name: 'CR-001', amount: 299.99, status: 'Success' },
+        { type: 'Original Order', internal_id: '12570', external_id: 'SO-1234', date: '2024-01-15 08:00:00', name: 'SO-1234', amount: 299.99, status: 'Success' },
+        { type: 'Customer Deposit', internal_id: '12545', external_id: 'CD-4545', date: '2024-01-15 10:30:00', name: 'CD-4545', amount: 299.99, status: 'Deposited' }
     ],
     'mhi-ns90-test-store.SHP.Refund_7963945107802': [
-        { type: 'Customer Refund', name: 'Customer Refund against Marcus Rodriguez', status: 'Ready', date: '2024-01-15 06:35:00' },
-        { type: 'Original Order', name: 'SO-1235', status: 'Ready', date: '2024-01-15 08:30:00' },
-        { type: 'Customer Deposit', name: 'Customer Deposit against Marcus Rodriguez', status: 'Success', date: '2024-01-15 11:15:00' }
+        { type: 'Customer Refund', internal_id: '12573', external_id: 'CR-002', date: '2024-01-15 06:35:00', name: 'CR-002', amount: 199.99, status: 'Ready' },
+        { type: 'Original Order', internal_id: '12571', external_id: 'SO-1235', date: '2024-01-15 08:30:00', name: 'SO-1235', amount: 199.99, status: 'Ready' },
+        { type: 'Customer Deposit', internal_id: '12566', external_id: 'CD-4546', date: '2024-01-15 11:15:00', name: 'CD-4546', amount: 199.99, status: 'Fully Applied' }
     ]
 };
 
@@ -576,6 +803,8 @@ const chartData = {
 // Initialize dashboard
 document.addEventListener('DOMContentLoaded', function() {
     try {
+        // Initialize the customer tab headers first
+        switchTab('customer');
         loadData();
         setupEventListeners();
         initializeCharts();
@@ -663,6 +892,11 @@ function switchTab(tabName) {
     const paymentMethodHeader = document.getElementById('paymentMethodHeader');
     const paymentIdHeader = document.getElementById('paymentIdHeader');
     const matrixTypeHeader = document.getElementById('matrixTypeHeader');
+    const poNumberHeader = document.getElementById('poNumberHeader');
+    const subsidiaryHeader = document.getElementById('subsidiaryHeader');
+    const trackingNumberHeader = document.getElementById('trackingNumberHeader');
+    const trackingCompanyHeader = document.getElementById('trackingCompanyHeader');
+    const statusHeader = document.querySelector('.summary-table th:nth-child(16)'); // Status column (adjusted for new columns)
     
     if (emailCustomerHeader) {
         if (tabName === 'deposit') {
@@ -674,6 +908,11 @@ function switchTab(tabName) {
             if (paymentMethodHeader) paymentMethodHeader.style.display = 'table-cell';
             if (paymentIdHeader) paymentIdHeader.style.display = 'table-cell';
             if (matrixTypeHeader) matrixTypeHeader.style.display = 'none';
+            if (poNumberHeader) poNumberHeader.style.display = 'none';
+            if (subsidiaryHeader) subsidiaryHeader.style.display = 'none';
+            if (trackingNumberHeader) trackingNumberHeader.style.display = 'none';
+            if (trackingCompanyHeader) trackingCompanyHeader.style.display = 'none';
+            if (statusHeader) statusHeader.style.display = 'table-cell';
         } else if (tabName === 'order') {
             emailCustomerHeader.style.display = 'none';
             // Show order-specific columns
@@ -683,6 +922,25 @@ function switchTab(tabName) {
             if (paymentMethodHeader) paymentMethodHeader.style.display = 'none';
             if (paymentIdHeader) paymentIdHeader.style.display = 'none';
             if (matrixTypeHeader) matrixTypeHeader.style.display = 'none';
+            if (poNumberHeader) poNumberHeader.style.display = 'table-cell';
+            if (subsidiaryHeader) subsidiaryHeader.style.display = 'table-cell';
+            if (trackingNumberHeader) trackingNumberHeader.style.display = 'none';
+            if (trackingCompanyHeader) trackingCompanyHeader.style.display = 'none';
+            if (statusHeader) statusHeader.style.display = 'table-cell';
+        } else if (tabName === 'fulfillment') {
+            emailCustomerHeader.style.display = 'none';
+            // Show fulfillment-specific columns
+            if (customerHeader) customerHeader.style.display = 'none';
+            if (amountHeader) amountHeader.style.display = 'none';
+            if (taxTotalHeader) taxTotalHeader.style.display = 'none';
+            if (paymentMethodHeader) paymentMethodHeader.style.display = 'none';
+            if (paymentIdHeader) paymentIdHeader.style.display = 'none';
+            if (matrixTypeHeader) matrixTypeHeader.style.display = 'none';
+            if (poNumberHeader) poNumberHeader.style.display = 'none';
+            if (subsidiaryHeader) subsidiaryHeader.style.display = 'none';
+            if (trackingNumberHeader) trackingNumberHeader.style.display = 'table-cell';
+            if (trackingCompanyHeader) trackingCompanyHeader.style.display = 'table-cell';
+            if (statusHeader) statusHeader.style.display = 'table-cell';
         } else if (tabName === 'products') {
             emailCustomerHeader.textContent = 'Email';
             emailCustomerHeader.style.display = 'table-cell';
@@ -693,6 +951,26 @@ function switchTab(tabName) {
             if (paymentMethodHeader) paymentMethodHeader.style.display = 'none';
             if (paymentIdHeader) paymentIdHeader.style.display = 'none';
             if (matrixTypeHeader) matrixTypeHeader.style.display = 'table-cell';
+            if (poNumberHeader) poNumberHeader.style.display = 'none';
+            if (subsidiaryHeader) subsidiaryHeader.style.display = 'none';
+            if (trackingNumberHeader) trackingNumberHeader.style.display = 'none';
+            if (trackingCompanyHeader) trackingCompanyHeader.style.display = 'none';
+            if (statusHeader) statusHeader.style.display = 'table-cell';
+        } else if (tabName === 'customer') {
+            emailCustomerHeader.textContent = 'Email';
+            emailCustomerHeader.style.display = 'table-cell';
+            // Hide all specific columns and Status column for customer tab
+            if (customerHeader) customerHeader.style.display = 'none';
+            if (amountHeader) amountHeader.style.display = 'none';
+            if (taxTotalHeader) taxTotalHeader.style.display = 'none';
+            if (paymentMethodHeader) paymentMethodHeader.style.display = 'none';
+            if (paymentIdHeader) paymentIdHeader.style.display = 'none';
+            if (matrixTypeHeader) matrixTypeHeader.style.display = 'none';
+            if (poNumberHeader) poNumberHeader.style.display = 'none';
+            if (subsidiaryHeader) subsidiaryHeader.style.display = 'none';
+            if (trackingNumberHeader) trackingNumberHeader.style.display = 'none';
+            if (trackingCompanyHeader) trackingCompanyHeader.style.display = 'none';
+            if (statusHeader) statusHeader.style.display = 'none';
         } else {
             emailCustomerHeader.textContent = 'Email';
             emailCustomerHeader.style.display = 'table-cell';
@@ -703,6 +981,11 @@ function switchTab(tabName) {
             if (paymentMethodHeader) paymentMethodHeader.style.display = 'none';
             if (paymentIdHeader) paymentIdHeader.style.display = 'none';
             if (matrixTypeHeader) matrixTypeHeader.style.display = 'none';
+            if (poNumberHeader) poNumberHeader.style.display = 'none';
+            if (subsidiaryHeader) subsidiaryHeader.style.display = 'none';
+            if (trackingNumberHeader) trackingNumberHeader.style.display = 'none';
+            if (trackingCompanyHeader) trackingCompanyHeader.style.display = 'none';
+            if (statusHeader) statusHeader.style.display = 'table-cell';
         }
     }
     
@@ -819,6 +1102,14 @@ function initializeCharts() {
     }
 }
 
+// Function to get order status based on record
+function getOrderStatus(record) {
+    const statuses = ['Pending Fulfillment', 'Billed', 'Closed', 'Pending Billing'];
+    // Use a simple hash of the record ID to get consistent status
+    const hash = record.internal_id.toString().split('').reduce((a, b) => a + b.charCodeAt(0), 0);
+    return statuses[hash % statuses.length];
+}
+
 // Populate Summary Table
 function populateSummaryTable() {
     const tbody = document.getElementById('summaryTableBody');
@@ -832,11 +1123,29 @@ function populateSummaryTable() {
         // Create email cell - show email for customers, empty for others
         const emailCell = currentTab === 'customer' ? record.email || '' : '';
         
-        // Create process ID cell - show process ID for customers and deposits, empty for others
-        const processIdCell = (currentTab === 'customer' || currentTab === 'deposit') ? record.process_id || '' : '';
+        // Create process ID cell - show process ID for customers, deposits, orders, and fulfillment
+        const processIdCell = (currentTab === 'customer' || currentTab === 'deposit' || currentTab === 'order' || currentTab === 'fulfillment') ? record.process_id || '' : '';
         
         // For deposits, show additional columns
         if (currentTab === 'deposit') {
+            // Determine deposit status values
+            let depositStatus = '';
+            let integrationStatus = '';
+            
+            if (record.status === 'success') {
+                depositStatus = 'Deposited';
+                integrationStatus = 'Success';
+            } else if (record.status === 'failed') {
+                depositStatus = 'Not Deposited';
+                integrationStatus = 'Failed';
+            } else if (record.status === 'ready') {
+                depositStatus = 'Fully Applied';
+                integrationStatus = 'Ready';
+            } else {
+                depositStatus = 'Not Deposited';
+                integrationStatus = record.status;
+            }
+            
             row.innerHTML = `
                 <td class="flow-cell">${record.flow}</td>
                 <td>${record.internal_id}</td>
@@ -846,24 +1155,55 @@ function populateSummaryTable() {
                 <td>$${record.amount?.toFixed(2) || '0.00'}</td>
                 <td>${record.payment_method || 'N/A'}</td>
                 <td>${record.payment_id || 'N/A'}</td>
+                <td class="status-cell"><span class="status-badge status-${depositStatus.toLowerCase().replace(' ', '-')}">${depositStatus}</span></td>
                 <td>${formatDateTime(record.date)}</td>
                 <td><span class="stage-badge stage-${record.stage}">${record.stage}</span></td>
-                <td class="status-cell"><span class="status-badge status-${record.status}">${record.status}</span></td>
+                <td class="status-cell"><span class="status-badge status-${integrationStatus.toLowerCase()}">${integrationStatus}</span></td>
                 <td>${processIdCell}</td>
             `;
         } else if (currentTab === 'order') {
-            // For orders, show customer, amount, and tax_total columns
+            // For orders, show customer, amount, tax_total, PO#, and SUBSIDIARY columns
             row.innerHTML = `
                 <td class="flow-cell">${record.flow}</td>
                 <td>${record.internal_id}</td>
                 <td>${record.external_id}</td>
                 <td>${record.name}</td>
+                <td>${record.po_number || 'N/A'}</td>
+                <td>${record.subsidiary || 'N/A'}</td>
                 <td>${record.customer_name || ''}</td>
                 <td>$${record.amount?.toFixed(2) || '0.00'}</td>
                 <td>$${record.tax_total?.toFixed(2) || '0.00'}</td>
+                <td>${getOrderStatus(record)}</td>
                 <td>${formatDateTime(record.date)}</td>
                 <td><span class="stage-badge stage-${record.stage}">${record.stage}</span></td>
                 <td class="status-cell"><span class="status-badge status-${record.status}">${record.status}</span></td>
+                <td>${processIdCell}</td>
+            `;
+        } else if (currentTab === 'fulfillment') {
+            // For fulfillment, show tracking number and tracking company columns
+            // Determine integration status for fulfillment
+            let integrationStatus = '';
+            if (record.status === 'Picked' || record.status === 'Packed' || record.status === 'Shipped') {
+                integrationStatus = 'Success';
+            } else if (record.stage === 'target') {
+                integrationStatus = 'Ready';
+            } else if (record.stage === 'landed') {
+                integrationStatus = 'Failed';
+            } else {
+                integrationStatus = 'Ready';
+            }
+            
+            row.innerHTML = `
+                <td class="flow-cell">${record.flow}</td>
+                <td>${record.internal_id}</td>
+                <td>${record.external_id}</td>
+                <td>${record.name}</td>
+                <td>${record.tracking_number || 'N/A'}</td>
+                <td>${record.tracking_company || 'N/A'}</td>
+                <td>${record.status}</td>
+                <td>${formatDateTime(record.date)}</td>
+                <td><span class="stage-badge stage-${record.stage}">${record.stage}</span></td>
+                <td class="status-cell"><span class="status-badge status-${integrationStatus.toLowerCase()}">${integrationStatus}</span></td>
                 <td>${processIdCell}</td>
             `;
         } else if (currentTab === 'products') {
@@ -875,19 +1215,34 @@ function populateSummaryTable() {
                 <td>${record.name}</td>
                 <td>${emailCell}</td>
                 <td>${record.matrix_type || 'N/A'}</td>
+                <td></td>
                 <td>${formatDateTime(record.date)}</td>
                 <td><span class="stage-badge stage-${record.stage}">${record.stage}</span></td>
                 <td class="status-cell"><span class="status-badge status-${record.status}">${record.status}</span></td>
                 <td>${processIdCell}</td>
             `;
-        } else {
-            // For other tabs (customer, fulfillment, refund), use the original format
+        } else if (currentTab === 'customer') {
+            // For customer tab, remove Status column
             row.innerHTML = `
                 <td class="flow-cell">${record.flow}</td>
                 <td>${record.internal_id}</td>
                 <td>${record.external_id}</td>
                 <td>${record.name}</td>
                 <td>${emailCell}</td>
+                <td>${formatDateTime(record.date)}</td>
+                <td><span class="stage-badge stage-${record.stage}">${record.stage}</span></td>
+                <td class="status-cell"><span class="status-badge status-${record.status}">${record.status}</span></td>
+                <td>${processIdCell}</td>
+            `;
+        } else {
+            // For other tabs (refund), use the original format
+            row.innerHTML = `
+                <td class="flow-cell">${record.flow}</td>
+                <td>${record.internal_id}</td>
+                <td>${record.external_id}</td>
+                <td>${record.name}</td>
+                <td>${emailCell}</td>
+                <td></td>
                 <td>${formatDateTime(record.date)}</td>
                 <td><span class="stage-badge stage-${record.stage}">${record.stage}</span></td>
                 <td class="status-cell"><span class="status-badge status-${record.status}">${record.status}</span></td>
@@ -1020,6 +1375,19 @@ function viewDetails(externalId) {
         const lineItems = sampleLineItems[externalId] || [];
         if (lineItems.length > 0) {
             document.getElementById('lineItemsSection').style.display = 'block';
+            
+            // Show all columns for order
+            document.getElementById('priceLevelHeader').style.display = 'table-cell';
+            document.getElementById('priceHeader').style.display = 'table-cell';
+            document.getElementById('amountHeader').style.display = 'table-cell';
+            document.getElementById('taxCodeHeader').style.display = 'table-cell';
+            document.getElementById('taxAmountHeader').style.display = 'table-cell';
+            document.getElementById('shpLineIdHeader').style.display = 'table-cell';
+            document.getElementById('locationHeader').style.display = 'none';
+            
+            // Reset location header text to LOCATION for order
+            document.getElementById('locationHeader').textContent = 'LOCATION';
+            
             populateLineItemsTable(lineItems);
         }
         
@@ -1030,14 +1398,40 @@ function viewDetails(externalId) {
             populateAssociatedRecordsTable(associatedRecords);
         }
         
-        document.getElementById('lineItemsTitle').textContent = 'Integration Records Status - Order Details';
+        document.getElementById('lineItemsTitle').textContent = 'Order Details';
+        document.getElementById('lineItemsHeader').textContent = 'Order Lines';
         
     } else if (currentTab === 'fulfillment') {
         // Show line items
         const lineItems = sampleLineItems[externalId] || [];
         if (lineItems.length > 0) {
             document.getElementById('lineItemsSection').style.display = 'block';
-            populateLineItemsTable(lineItems);
+            
+            // Reset all headers first to ensure proper state
+            document.getElementById('priceLevelHeader').style.display = 'table-cell';
+            document.getElementById('priceHeader').style.display = 'table-cell';
+            document.getElementById('amountHeader').style.display = 'table-cell';
+            document.getElementById('taxCodeHeader').style.display = 'table-cell';
+            document.getElementById('taxAmountHeader').style.display = 'table-cell';
+            document.getElementById('shpLineIdHeader').style.display = 'table-cell';
+            document.getElementById('locationHeader').style.display = 'none';
+            
+            // Hide price-related columns for fulfillment
+            document.getElementById('priceLevelHeader').style.display = 'none';
+            document.getElementById('priceHeader').style.display = 'none';
+            document.getElementById('amountHeader').style.display = 'none';
+            document.getElementById('taxCodeHeader').style.display = 'none';
+            document.getElementById('taxAmountHeader').style.display = 'none';
+            document.getElementById('shpLineIdHeader').style.display = 'none';
+            document.getElementById('locationHeader').style.display = 'table-cell';
+            
+            // Change location header text to LOCATION for fulfillment
+            document.getElementById('locationHeader').textContent = 'LOCATION';
+            
+            // Small delay to ensure DOM updates are applied
+            setTimeout(() => {
+                populateLineItemsTable(lineItems);
+            }, 10);
         }
         
         // Show associated records
@@ -1047,7 +1441,8 @@ function viewDetails(externalId) {
             populateAssociatedRecordsTable(associatedRecords);
         }
         
-        document.getElementById('lineItemsTitle').textContent = 'Integration Records Status - Fulfillment Details';
+        document.getElementById('lineItemsTitle').textContent = 'Fulfillment Details';
+        document.getElementById('lineItemsHeader').textContent = 'Fulfilled Lines';
         
     } else if (currentTab === 'products' && record.matrix_type === 'PARENT') {
         // Show child items for matrix products
@@ -1057,7 +1452,7 @@ function viewDetails(externalId) {
             populateLineItemsTable(childItems);
         }
         
-        document.getElementById('lineItemsTitle').textContent = 'Integration Records Status - Product Child Items';
+        document.getElementById('lineItemsTitle').textContent = 'Variants';
         
     } else if (currentTab === 'refund') {
         // Show refund details as line items
@@ -1132,25 +1527,39 @@ function populateLineItemsTable(lineItems) {
     if (lineItems.length > 0) {
         lineItems.forEach(item => {
             const row = document.createElement('tr');
-            row.innerHTML = `
-                <td>${item.internal_id || ''}</td>
-                <td>${item.external_id || ''}</td>
-                <td>${item.item_id || ''}</td>
-                <td>${item.name || ''}</td>
-                <td>${item.sku || ''}</td>
-                <td>${item.price_level || ''}</td>
-                <td>$${item.price?.toFixed(2) || '0.00'}</td>
-                <td>${item.quantity || ''}</td>
-                <td>$${item.amount?.toFixed(2) || '0.00'}</td>
-                <td>${item.tax_code || ''}</td>
-                <td>$${item.tax_amount?.toFixed(2) || '0.00'}</td>
-                <td>${item.shp_line_id || ''}</td>
-            `;
+            
+                                            if (currentTab === 'fulfillment') {
+                                    // For fulfillment, show: internal_id, item_id, name, sku, quantity, location
+                                    row.innerHTML = `
+                                        <td>${item.internal_id || ''}</td>
+                                        <td>${item.item_id || ''}</td>
+                                        <td>${item.name || ''}</td>
+                                        <td>${item.sku || ''}</td>
+                                        <td>${item.quantity || ''}</td>
+                                        <td>$${item.amount?.toFixed(2) || '0.00'}</td>
+                                    `;
+            } else {
+                // For other tabs (order, products), show all columns
+                row.innerHTML = `
+                    <td>${item.internal_id || ''}</td>
+                    <td>${item.item_id || ''}</td>
+                    <td>${item.name || ''}</td>
+                    <td>${item.sku || ''}</td>
+                    <td>${item.price_level || ''}</td>
+                    <td>$${item.price?.toFixed(2) || '0.00'}</td>
+                    <td>${item.quantity || ''}</td>
+                    <td>$${item.amount?.toFixed(2) || '0.00'}</td>
+                    <td>${item.tax_code || ''}</td>
+                    <td>$${item.tax_amount?.toFixed(2) || '0.00'}</td>
+                    <td>${item.shp_line_id || ''}</td>
+                `;
+            }
             tbody.appendChild(row);
         });
     } else {
+        const colspan = currentTab === 'fulfillment' ? 6 : 11;
         const row = document.createElement('tr');
-        row.innerHTML = '<td colspan="12" style="text-align: center; color: #6c757d; padding: 20px;">No line items available</td>';
+        row.innerHTML = `<td colspan="${colspan}" style="text-align: center; color: #6c757d; padding: 20px;">No line items available</td>`;
         tbody.appendChild(row);
     }
 }
@@ -1165,15 +1574,19 @@ function populateAssociatedRecordsTable(associatedRecords) {
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td>${record.type}</td>
-                <td>${record.name}</td>
-                <td><span class="status-badge status-${record.status.toLowerCase()}">${record.status}</span></td>
+                <td>${record.internal_id || ''}</td>
+                <td>${record.external_id || ''}</td>
                 <td>${formatDateTime(record.date)}</td>
+                <td>${record.name || ''}</td>
+                <td>${record.amount ? `$${record.amount.toFixed(2)}` : 'N/A'}</td>
+                <td>${record.applied_on || 'N/A'}</td>
+                <td><span class="status-badge status-${record.status.toLowerCase().replace(' ', '-')}">${record.status}</span></td>
             `;
             tbody.appendChild(row);
         });
     } else {
         const row = document.createElement('tr');
-        row.innerHTML = '<td colspan="4" style="text-align: center; color: #6c757d; padding: 20px;">No associated records available</td>';
+        row.innerHTML = '<td colspan="8" style="text-align: center; color: #6c757d; padding: 20px;">No associated records available</td>';
         tbody.appendChild(row);
     }
 }

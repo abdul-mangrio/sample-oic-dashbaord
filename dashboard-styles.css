@@ -532,7 +532,7 @@ body {
 
 .section-header {
     background: #f8f9fa;
-    padding: 9px 15px; /* Reduced by 40% from 15px 20px */
+    padding: 6px 15px; /* Further reduced height */
     border-bottom: 1px solid #e0e0e0;
     display: flex;
     align-items: center;
@@ -584,6 +584,22 @@ body {
 
 .summary-table .status-cell {
     text-align: center;
+}
+
+.summary-table tbody tr:hover {
+    background: #f8f9fa;
+    cursor: pointer;
+}
+
+.summary-table tbody tr.selected {
+    background: #e9ecef;
+    border-left: 4px solid #495057;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.summary-table tbody tr.selected td {
+    background: #e9ecef;
+    font-weight: 500;
 }
 
 /* Action Button */
@@ -683,12 +699,11 @@ body {
     font-size: 10px; /* Reduced from 12px to match summary-table */
     text-transform: uppercase;
     letter-spacing: 0.4px; /* Reduced from 0.5px to match summary-table */
-    border-bottom: 2px solid #e0e0e0;
+    border: 1px solid #e0e0e0;
     color: #495057;
 }
 
 .data-table tbody tr {
-    border-bottom: 1px solid #e0e0e0;
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -698,14 +713,21 @@ body {
 }
 
 .data-table tbody tr.selected {
-    background: #f8f9fa;
-    border-left: 4px solid #6c757d;
+    background: #e9ecef;
+    border-left: 4px solid #495057;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.data-table tbody tr.selected td {
+    background: #e9ecef;
+    font-weight: 500;
 }
 
 .data-table td {
     padding: 4px 4px; /* Further reduced padding to match summary-table */
     vertical-align: middle;
     font-size: 11px; /* Reduced from 13px to match summary-table */
+    border: 1px solid #e0e0e0;
 }
 
 .data-table td:first-child {
@@ -736,6 +758,46 @@ body {
 .status-failed {
     background: #f5c6cb;
     color: #721c24;
+}
+
+.status-deposited {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status-fully-applied {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.status-not-deposited {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-open {
+    background: #cce7ff;
+    color: #004085;
+}
+
+.status-paid-in-full {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status-picked {
+    background: #ffeaa7;
+    color: #6c5ce7;
+}
+
+.status-packed {
+    background: #e8d5ff;
+    color: #6f42c1;
+}
+
+.status-shipped {
+    background: #d1f2eb;
+    color: #0f5132;
 }
 
 /* Stage Badges */

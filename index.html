@@ -189,7 +189,7 @@
         <!-- Summary Table Section -->
         <div class="summary-section">
             <div class="section-header">
-                <h3>Integration Records Status - Summary</h3>
+                <h3>Order - Summary</h3>
             </div>
             <div class="summary-table-container">
                 <table class="summary-table">
@@ -199,6 +199,10 @@
                             <th>Internal ID</th>
                             <th>External ID</th>
                             <th>Name</th>
+                            <th id="poNumberHeader" style="display: none;">PO#</th>
+                            <th id="subsidiaryHeader" style="display: none;">SUBSIDIARY</th>
+                            <th id="trackingNumberHeader" style="display: none;">Tracking Number</th>
+                            <th id="trackingCompanyHeader" style="display: none;">Tracking Company</th>
                             <th id="emailCustomerHeader">Email</th>
                             <th id="customerHeader" style="display: none;">Customer</th>
                             <th id="amountHeader" style="display: none;">Amount</th>
@@ -206,9 +210,10 @@
                             <th id="paymentMethodHeader" style="display: none;">Payment Method</th>
                             <th id="paymentIdHeader" style="display: none;">Payment ID</th>
                             <th id="matrixTypeHeader" style="display: none;">Matrix Type</th>
+                            <th>Status</th>
                             <th>Date</th>
                             <th>Stage</th>
-                            <th>Status</th>
+                            <th>Integration Status</th>
                             <th>Process ID</th>
                         </tr>
                     </thead>
@@ -230,22 +235,25 @@
             
             <!-- Line Items Section -->
             <div id="lineItemsSection" style="display: none;">
+                                    <div class="section-header">
+                        <h4 id="lineItemsHeader">Order Lines</h4>
+                    </div>
                 <div class="line-items-table-wrapper">
                     <table id="lineItemsTable" class="data-table">
                         <thead>
                             <tr>
                                 <th>INTERNAL ID</th>
-                                <th>EXTERNAL ID</th>
                                 <th>ITEM ID</th>
                                 <th>NAME</th>
                                 <th>SKU</th>
-                                <th>PRICE LEVEL</th>
-                                <th>PRICE</th>
+                                <th id="priceLevelHeader">PRICE LEVEL</th>
+                                <th id="priceHeader">PRICE</th>
                                 <th>QUANTITY</th>
-                                <th>AMOUNT</th>
-                                <th>TAX CODE</th>
-                                <th>TAX AMOUNT</th>
-                                <th>SHP LINE ID</th>
+                                <th id="amountHeader">AMOUNT</th>
+                                <th id="taxCodeHeader">TAX CODE</th>
+                                <th id="taxAmountHeader">TAX AMOUNT</th>
+                                <th id="shpLineIdHeader">SHP LINE ID</th>
+                                <th id="locationHeader" style="display: none;">LOCATION</th>
                             </tr>
                         </thead>
                         <tbody id="lineItemsTableBody">
@@ -257,13 +265,20 @@
             
             <!-- Associated Records Section -->
             <div id="associatedRecordsSection" style="display: none;">
+                <div class="section-header">
+                    <h4>Related Records</h4>
+                </div>
                 <table id="associatedRecordsTable" class="data-table">
                     <thead>
                         <tr>
                             <th>TYPE</th>
-                            <th>NAME</th>
-                            <th>STATUS</th>
+                            <th>INTERNAL ID</th>
+                            <th>EXTERNAL ID</th>
                             <th>DATE</th>
+                            <th>NAME</th>
+                            <th>AMOUNT</th>
+                            <th>APPLIED ON</th>
+                            <th>STATUS</th>
                         </tr>
                     </thead>
                     <tbody id="associatedRecordsTableBody">
