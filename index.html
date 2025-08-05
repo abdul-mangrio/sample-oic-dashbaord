@@ -228,23 +228,24 @@
                 </button>
             </div>
             
-
-            
             <!-- Line Items Section -->
             <div id="lineItemsSection" style="display: none;">
-                <div class="section-header">
-                    <h4>Line Items</h4>
-                </div>
                 <div class="line-items-table-wrapper">
                     <table id="lineItemsTable" class="data-table">
                         <thead>
                             <tr>
+                                <th>INTERNAL ID</th>
+                                <th>EXTERNAL ID</th>
                                 <th>ITEM ID</th>
                                 <th>NAME</th>
+                                <th>SKU</th>
+                                <th>PRICE LEVEL</th>
+                                <th>PRICE</th>
                                 <th>QUANTITY</th>
                                 <th>AMOUNT</th>
-                                <th>TAX LOCATION</th>
-                                <th>TOTAL</th>
+                                <th>TAX CODE</th>
+                                <th>TAX AMOUNT</th>
+                                <th>SHP LINE ID</th>
                             </tr>
                         </thead>
                         <tbody id="lineItemsTableBody">
@@ -256,24 +257,19 @@
             
             <!-- Associated Records Section -->
             <div id="associatedRecordsSection" style="display: none;">
-                <div class="section-header">
-                    <h4>Associated Records</h4>
-                </div>
-                <div class="associated-records-wrapper">
-                    <table id="associatedRecordsTable" class="data-table">
-                        <thead>
-                            <tr>
-                                <th>TYPE</th>
-                                <th>NAME</th>
-                                <th>STATUS</th>
-                                <th>DATE</th>
-                            </tr>
-                        </thead>
-                        <tbody id="associatedRecordsTableBody">
-                            <!-- Associated records will be populated dynamically -->
-                        </tbody>
-                    </table>
-                </div>
+                <table id="associatedRecordsTable" class="data-table">
+                    <thead>
+                        <tr>
+                            <th>TYPE</th>
+                            <th>NAME</th>
+                            <th>STATUS</th>
+                            <th>DATE</th>
+                        </tr>
+                    </thead>
+                    <tbody id="associatedRecordsTableBody">
+                        <!-- Associated records will be populated dynamically -->
+                    </tbody>
+                </table>
             </div>
         </div>
 

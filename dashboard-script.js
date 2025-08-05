@@ -429,20 +429,98 @@ const sampleData = {
 // Sample line items data
 const sampleLineItems = {
     'mhi-ns90-test-store.SHP.Order_7963945107601': [
-        { item_id: 'LAPTOP001', name: 'Laptop Pro 15"', quantity: 1, amount: 1299.99, tax_location: 'CA', total: 1429.98 },
-        { item_id: 'MOUSE001', name: 'Wireless Mouse', quantity: 2, amount: 29.99, tax_location: 'CA', total: 65.98 }
+        { 
+            internal_id: '12563', 
+            external_id: 'mhi-ns90-test-store.SHP.Order_7963945107601',
+            item_id: 'LAPTOP001', 
+            name: 'Laptop Pro 15"', 
+            sku: 'LAPTOP-PRO-15-2024',
+            price_level: 'Standard',
+            price: 1299.99,
+            quantity: 1, 
+            amount: 1299.99, 
+            tax_code: 'CA_TAX', 
+            tax_amount: 129.99,
+            shp_line_id: '15769064898647'
+        },
+        { 
+            internal_id: '12563', 
+            external_id: 'mhi-ns90-test-store.SHP.Order_7963945107601',
+            item_id: 'MOUSE001', 
+            name: 'Wireless Mouse', 
+            sku: 'MOUSE-WIRELESS-001',
+            price_level: 'Custom',
+            price: 29.99,
+            quantity: 2, 
+            amount: 59.98, 
+            tax_code: 'CA_TAX', 
+            tax_amount: 5.99,
+            shp_line_id: '15769064898648'
+        }
     ],
     'mhi-ns90-test-store.SHP.Order_7963945107602': [
-        { item_id: 'KEYBOARD001', name: 'Gaming Keyboard', quantity: 1, amount: 149.99, tax_location: 'NY', total: 164.99 }
+        { 
+            internal_id: '12564', 
+            external_id: 'mhi-ns90-test-store.SHP.Order_7963945107602',
+            item_id: 'KEYBOARD001', 
+            name: 'Gaming Keyboard', 
+            sku: 'KEYBOARD-GAMING-001',
+            price_level: 'Standard',
+            price: 149.99,
+            quantity: 1, 
+            amount: 149.99, 
+            tax_code: 'NY_TAX', 
+            tax_amount: 15.00,
+            shp_line_id: '15769064898649'
+        }
     ],
     'mhi-ns90-test-store.SHP.Order_7963945107603': [
-        { item_id: 'MONITOR001', name: '4K Monitor', quantity: 1, amount: 599.99, tax_location: 'TX', total: 659.99 }
+        { 
+            internal_id: '12565', 
+            external_id: 'mhi-ns90-test-store.SHP.Order_7963945107603',
+            item_id: 'MONITOR001', 
+            name: '4K Monitor', 
+            sku: 'MONITOR-4K-001',
+            price_level: 'Standard',
+            price: 599.99,
+            quantity: 1, 
+            amount: 599.99, 
+            tax_code: 'TX_TAX', 
+            tax_amount: 60.00,
+            shp_line_id: '15769064898650'
+        }
     ],
     'mhi-ns90-test-store.NS.Fulfillment_7963945107701': [
-        { item_id: 'LAPTOP001', name: 'Laptop Pro 15"', quantity: 1, amount: 1299.99, tax_location: 'CA', total: 1429.98 }
+        { 
+            internal_id: '12566', 
+            external_id: 'mhi-ns90-test-store.NS.Fulfillment_7963945107701',
+            item_id: 'LAPTOP001', 
+            name: 'Laptop Pro 15"', 
+            sku: 'LAPTOP-PRO-15-2024',
+            price_level: 'Standard',
+            price: 1299.99,
+            quantity: 1, 
+            amount: 1299.99, 
+            tax_code: 'CA_TAX', 
+            tax_amount: 129.99,
+            shp_line_id: '15769064898651'
+        }
     ],
     'mhi-ns90-test-store.NS.Fulfillment_7963945107702': [
-        { item_id: 'MOUSE001', name: 'Wireless Mouse', quantity: 2, amount: 29.99, tax_location: 'NY', total: 65.98 }
+        { 
+            internal_id: '12567', 
+            external_id: 'mhi-ns90-test-store.NS.Fulfillment_7963945107702',
+            item_id: 'MOUSE001', 
+            name: 'Wireless Mouse', 
+            sku: 'MOUSE-WIRELESS-001',
+            price_level: 'Custom',
+            price: 29.99,
+            quantity: 2, 
+            amount: 59.98, 
+            tax_code: 'NY_TAX', 
+            tax_amount: 6.00,
+            shp_line_id: '15769064898652'
+        }
     ]
 };
 
@@ -984,9 +1062,48 @@ function viewDetails(externalId) {
     } else if (currentTab === 'refund') {
         // Show refund details as line items
         const lineItems = [
-            { item_id: 'Refund Amount', name: `$${record.refund_amount?.toFixed(2) || '0.00'}`, quantity: 1, amount: record.refund_amount || 0, tax_location: 'N/A', total: record.refund_amount || 0 },
-            { item_id: 'Original Order', name: record.original_order || 'N/A', quantity: 1, amount: 0, tax_location: 'N/A', total: 0 },
-            { item_id: 'Customer', name: record.customer_name || 'N/A', quantity: 1, amount: 0, tax_location: 'N/A', total: 0 }
+            { 
+                internal_id: record.internal_id || '',
+                external_id: record.external_id || '',
+                item_id: 'Refund Amount', 
+                name: `$${record.refund_amount?.toFixed(2) || '0.00'}`, 
+                sku: 'N/A',
+                price_level: 'N/A',
+                price: record.refund_amount || 0,
+                quantity: 1, 
+                amount: record.refund_amount || 0, 
+                tax_code: 'N/A', 
+                tax_amount: 0,
+                shp_line_id: 'N/A'
+            },
+            { 
+                internal_id: record.internal_id || '',
+                external_id: record.external_id || '',
+                item_id: 'Original Order', 
+                name: record.original_order || 'N/A', 
+                sku: 'N/A',
+                price_level: 'N/A',
+                price: 0,
+                quantity: 1, 
+                amount: 0, 
+                tax_code: 'N/A', 
+                tax_amount: 0,
+                shp_line_id: 'N/A'
+            },
+            { 
+                internal_id: record.internal_id || '',
+                external_id: record.external_id || '',
+                item_id: 'Customer', 
+                name: record.customer_name || 'N/A', 
+                sku: 'N/A',
+                price_level: 'N/A',
+                price: 0,
+                quantity: 1, 
+                amount: 0, 
+                tax_code: 'N/A', 
+                tax_amount: 0,
+                shp_line_id: 'N/A'
+            }
         ];
         
         document.getElementById('lineItemsSection').style.display = 'block';
@@ -1016,18 +1133,24 @@ function populateLineItemsTable(lineItems) {
         lineItems.forEach(item => {
             const row = document.createElement('tr');
             row.innerHTML = `
-                <td>${item.item_id}</td>
-                <td>${item.name}</td>
-                <td>${item.quantity}</td>
+                <td>${item.internal_id || ''}</td>
+                <td>${item.external_id || ''}</td>
+                <td>${item.item_id || ''}</td>
+                <td>${item.name || ''}</td>
+                <td>${item.sku || ''}</td>
+                <td>${item.price_level || ''}</td>
+                <td>$${item.price?.toFixed(2) || '0.00'}</td>
+                <td>${item.quantity || ''}</td>
                 <td>$${item.amount?.toFixed(2) || '0.00'}</td>
-                <td>${item.tax_location}</td>
-                <td>$${item.total?.toFixed(2) || '0.00'}</td>
+                <td>${item.tax_code || ''}</td>
+                <td>$${item.tax_amount?.toFixed(2) || '0.00'}</td>
+                <td>${item.shp_line_id || ''}</td>
             `;
             tbody.appendChild(row);
         });
     } else {
         const row = document.createElement('tr');
-        row.innerHTML = '<td colspan="6" style="text-align: center; color: #6c757d; padding: 20px;">No line items available</td>';
+        row.innerHTML = '<td colspan="12" style="text-align: center; color: #6c757d; padding: 20px;">No line items available</td>';
         tbody.appendChild(row);
     }
 }
