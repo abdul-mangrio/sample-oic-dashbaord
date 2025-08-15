@@ -10,7 +10,7 @@ let chartsCollapsed = false;
 const sampleData = {
     customer: [
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12545', 
             external_id: 'mhi-ns90-test-store.SHP.Customer_7963945107543', 
             name: 'Evita Evans', 
@@ -23,7 +23,7 @@ const sampleData = {
             process_id: 'hujv4HEgEfCNWg3rq0agKw'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12546', 
             external_id: 'mhi-ns90-test-store.SHP.Customer_7963945107544', 
             name: 'Marcus Rodriguez', 
@@ -36,7 +36,7 @@ const sampleData = {
             process_id: 'k2mN8FgHdEfCNWg3rq0agLx'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12547', 
             external_id: 'mhi-ns90-test-store.SHP.Customer_7963945107545', 
             name: 'Sarah Johnson', 
@@ -49,7 +49,7 @@ const sampleData = {
             process_id: 'p9qR5TgVdEfCNWg3rq0agMy'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12548', 
             external_id: 'mhi-ns90-test-store.SHP.Customer_7963945107546', 
             name: 'David Chen', 
@@ -62,7 +62,7 @@ const sampleData = {
             process_id: 'w3xZ7BgCdEfCNWg3rq0agNz'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12549', 
             external_id: 'mhi-ns90-test-store.SHP.Customer_7963945107547', 
             name: 'Lisa Thompson', 
@@ -75,7 +75,7 @@ const sampleData = {
             process_id: 'a1bC4DgFdEfCNWg3rq0agOp'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12550', 
             external_id: 'mhi-ns90-test-store.SHP.Customer_7963945107548', 
             name: 'Michael Brown', 
@@ -88,7 +88,7 @@ const sampleData = {
             process_id: 'e5fG8HgIdEfCNWg3rq0agQr'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12551', 
             external_id: 'mhi-ns90-test-store.SHP.Customer_7963945107549', 
             name: 'Jennifer Davis', 
@@ -101,7 +101,7 @@ const sampleData = {
             process_id: 'i9jK2LgMdEfCNWg3rq0agSt'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12552', 
             external_id: 'mhi-ns90-test-store.SHP.Customer_7963945107550', 
             name: 'Robert Wilson', 
@@ -116,7 +116,7 @@ const sampleData = {
     ],
     deposit: [
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12553', 
             external_id: 'mhi-ns90-test-store.SHP.Deposit_7963945107601', 
             name: 'CD-12553', 
@@ -132,7 +132,7 @@ const sampleData = {
             process_id: 'hujv4HEgEfCNWg3rq0agKw'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12554', 
             external_id: 'mhi-ns90-test-store.SHP.Deposit_7963945107602', 
             name: 'CD-12554', 
@@ -148,7 +148,7 @@ const sampleData = {
             process_id: 'k2mN8FgHdEfCNWg3rq0agLx'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12555', 
             external_id: 'mhi-ns90-test-store.SHP.Deposit_7963945107603', 
             name: 'CD-12555', 
@@ -164,7 +164,7 @@ const sampleData = {
             process_id: 'p9qR5TgVdEfCNWg3rq0agMy'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12556', 
             external_id: 'mhi-ns90-test-store.SHP.Deposit_7963945107604', 
             name: 'CD-12556', 
@@ -180,7 +180,7 @@ const sampleData = {
             process_id: 'w3xZ7BgCdEfCNWg3rq0agNz'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12557', 
             external_id: 'mhi-ns90-test-store.SHP.Deposit_7963945107605', 
             name: 'CD-12557', 
@@ -196,7 +196,7 @@ const sampleData = {
             process_id: 'a1bC4DgFdEfCNWg3rq0agOp'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12558', 
             external_id: 'mhi-ns90-test-store.SHP.Deposit_7963945107606', 
             name: 'CD-12558', 
@@ -212,7 +212,7 @@ const sampleData = {
             process_id: 'e5fG8HgIdEfCNWg3rq0agQr'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12559', 
             external_id: 'mhi-ns90-test-store.SHP.Deposit_7963945107607', 
             name: 'CD-12559', 
@@ -228,7 +228,7 @@ const sampleData = {
             process_id: 'i9jK2LgMdEfCNWg3rq0agSt'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12560', 
             external_id: 'mhi-ns90-test-store.SHP.Deposit_7963945107608', 
             name: 'CD-12560', 
@@ -244,7 +244,7 @@ const sampleData = {
             process_id: 'u7vW0XgYdEfCNWg3rq0agUv'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12561', 
             external_id: 'mhi-ns90-test-store.SHP.Deposit_7963945107609', 
             name: 'CD-12561', 
@@ -260,7 +260,7 @@ const sampleData = {
             process_id: 'x1yZ4AgBdEfCNWg3rq0agWx'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12562', 
             external_id: 'mhi-ns90-test-store.SHP.Deposit_7963945107610', 
             name: 'CD-12562', 
@@ -278,7 +278,7 @@ const sampleData = {
     ],
     order: [
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12563', 
             external_id: 'mhi-ns90-test-store.SHP.Order_77787878', 
             name: 'SO-1234', 
@@ -295,7 +295,7 @@ const sampleData = {
             process_id: 'ord1hujv4HEgEfCNWg3rq0agKw'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12564', 
             external_id: 'mhi-ns90-test-store.SHP.Order_77787879', 
             name: 'SO-1235', 
@@ -312,7 +312,7 @@ const sampleData = {
             process_id: 'ord2k2mN8FgHdEfCNWg3rq0agLx'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12565', 
             external_id: 'mhi-ns90-test-store.SHP.Order_77787880', 
             name: 'SO-1236', 
@@ -329,7 +329,7 @@ const sampleData = {
             process_id: 'ord3p9qR5TgVdEfCNWg3rq0agMy'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12573', 
             external_id: 'mhi-ns90-test-store.SHP.Order_77787883', 
             name: 'SO-1237', 
@@ -346,7 +346,7 @@ const sampleData = {
             process_id: 'ord4i9jK2LgMdEfCNWg3rq0agSt'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12574', 
             external_id: 'mhi-ns90-test-store.SHP.Order_77787884', 
             name: 'SO-1238', 
@@ -363,7 +363,7 @@ const sampleData = {
             process_id: 'ord5u7vW0XgYdEfCNWg3rq0agUv'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12575', 
             external_id: 'mhi-ns90-test-store.SHP.Order_77787885', 
             name: 'SO-1239', 
@@ -380,7 +380,7 @@ const sampleData = {
             process_id: 'ord6x1yZ4AgBdEfCNWg3rq0agWx'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12576', 
             external_id: 'mhi-ns90-test-store.SHP.Order_77787886', 
             name: 'SO-1240', 
@@ -399,7 +399,7 @@ const sampleData = {
     ],
     fulfillment: [
         { 
-            flow: 'SHP → NS', 
+            flow: 'Shopify', 
             internal_id: '12566', 
             external_id: '77787881', 
             name: 'IF-12566', 
@@ -413,7 +413,7 @@ const sampleData = {
             process_id: 'ful1hujv4HEgEfCNWg3rq0agKw'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'Shopify', 
             internal_id: '12568', 
             external_id: '77787882', 
             name: 'IF-12568', 
@@ -427,7 +427,7 @@ const sampleData = {
             process_id: 'ful2hujv4HEgEfCNWg3rq0agKw'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'Shopify', 
             internal_id: '12570', 
             external_id: '77787883', 
             name: 'IF-12570', 
@@ -443,7 +443,7 @@ const sampleData = {
     ],
     refund: [
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12568', 
             external_id: 'mhi-ns90-test-store.SHP.Refund_7963945107801', 
             name: 'RF-7890', 
@@ -458,7 +458,7 @@ const sampleData = {
             process_id: 'ref1hujv4HEgEfCNWg3rq0agKw'
         },
         { 
-            flow: 'SHP → NS', 
+            flow: 'NetSuite', 
             internal_id: '12569', 
             external_id: 'mhi-ns90-test-store.SHP.Refund_7963945107802', 
             name: 'RF-7891', 
@@ -473,9 +473,9 @@ const sampleData = {
             process_id: 'ref2k2mN8FgHdEfCNWg3rq0agLx'
         }
     ],
-    products: [
+            item: [
         { 
-            flow: 'NS → SHP', 
+            flow: 'Shopify', 
             internal_id: '12570', 
             external_id: 'mhi-ns90-test-store.NS.Product_7963945107901', 
             name: 'Laptop Pro', 
@@ -488,7 +488,7 @@ const sampleData = {
             process_id: 'prod1hujv4HEgEfCNWg3rq0agKw'
         },
         { 
-            flow: 'NS → SHP', 
+            flow: 'Shopify', 
             internal_id: '12571', 
             external_id: 'mhi-ns90-test-store.NS.Product_7963945107902', 
             name: 'Wireless Mouse', 
@@ -501,7 +501,7 @@ const sampleData = {
             process_id: 'prod2k2mN8FgHdEfCNWg3rq0agLx'
         },
         { 
-            flow: 'NS → SHP', 
+            flow: 'Shopify', 
             internal_id: '12572', 
             external_id: 'mhi-ns90-test-store.NS.Product_7963945107903', 
             name: 'Gaming Keyboard', 
@@ -781,7 +781,7 @@ const sampleAssociatedRecords = {
     ]
 };
 
-// Sample child items for matrix products
+        // Sample child items for matrix items
 const sampleChildItems = {
     'mhi-ns90-test-store.NS.Product_7963945107901': [
         { item_id: 'LAPTOP001_BLK', name: 'Laptop Pro 15" - Black', quantity: 10, amount: 1299.99, tax_location: 'N/A', total: 12999.90 },
@@ -871,6 +871,9 @@ function setupEventListeners() {
         document.querySelector('.filter-value').textContent = 'All Time';
         applyFilters();
     });
+
+            // Setup table row selection
+        setupTableRowSelection();
 }
 
 // Switch Tab
@@ -883,6 +886,20 @@ function switchTab(tabName) {
 
     // Update current tab
     currentTab = tabName;
+    
+    // Update section header based on tab
+    const sectionHeader = document.querySelector('.summary-section .section-header h3');
+    if (sectionHeader) {
+        const tabNames = {
+            'customer': 'Customers',
+            'deposit': 'Deposits',
+            'order': 'Orders',
+            'fulfillment': 'Fulfillments',
+            'refund': 'Refunds',
+            'item': 'Items'
+        };
+        sectionHeader.textContent = tabNames[tabName] || tabName.charAt(0).toUpperCase() + tabName.slice(1);
+    }
     
     // Update table header based on tab
     const emailCustomerHeader = document.getElementById('emailCustomerHeader');
@@ -941,7 +958,7 @@ function switchTab(tabName) {
             if (trackingNumberHeader) trackingNumberHeader.style.display = 'table-cell';
             if (trackingCompanyHeader) trackingCompanyHeader.style.display = 'table-cell';
             if (statusHeader) statusHeader.style.display = 'table-cell';
-        } else if (tabName === 'products') {
+        } else if (tabName === 'item') {
             emailCustomerHeader.textContent = 'Email';
             emailCustomerHeader.style.display = 'table-cell';
             // Show product-specific columns
@@ -1147,7 +1164,7 @@ function populateSummaryTable() {
             }
             
             row.innerHTML = `
-                <td class="flow-cell">${record.flow}</td>
+                <td class="target-cell">${record.flow}</td>
                 <td>${record.internal_id}</td>
                 <td>${record.external_id}</td>
                 <td>${record.name}</td>
@@ -1164,7 +1181,7 @@ function populateSummaryTable() {
         } else if (currentTab === 'order') {
             // For orders, show customer, amount, tax_total, PO#, and SUBSIDIARY columns
             row.innerHTML = `
-                <td class="flow-cell">${record.flow}</td>
+                <td class="target-cell">${record.flow}</td>
                 <td>${record.internal_id}</td>
                 <td>${record.external_id}</td>
                 <td>${record.name}</td>
@@ -1194,7 +1211,7 @@ function populateSummaryTable() {
             }
             
             row.innerHTML = `
-                <td class="flow-cell">${record.flow}</td>
+                <td class="target-cell">${record.flow}</td>
                 <td>${record.internal_id}</td>
                 <td>${record.external_id}</td>
                 <td>${record.name}</td>
@@ -1206,10 +1223,10 @@ function populateSummaryTable() {
                 <td class="status-cell"><span class="status-badge status-${integrationStatus.toLowerCase()}">${integrationStatus}</span></td>
                 <td>${processIdCell}</td>
             `;
-        } else if (currentTab === 'products') {
-            // For products, show matrix type column
+        } else if (currentTab === 'item') {
+            // For items, show matrix type column
             row.innerHTML = `
-                <td class="flow-cell">${record.flow}</td>
+                <td class="target-cell">${record.flow}</td>
                 <td>${record.internal_id}</td>
                 <td>${record.external_id}</td>
                 <td>${record.name}</td>
@@ -1224,7 +1241,7 @@ function populateSummaryTable() {
         } else if (currentTab === 'customer') {
             // For customer tab, remove Status column
             row.innerHTML = `
-                <td class="flow-cell">${record.flow}</td>
+                <td class="target-cell">${record.flow}</td>
                 <td>${record.internal_id}</td>
                 <td>${record.external_id}</td>
                 <td>${record.name}</td>
@@ -1237,7 +1254,7 @@ function populateSummaryTable() {
         } else {
             // For other tabs (refund), use the original format
             row.innerHTML = `
-                <td class="flow-cell">${record.flow}</td>
+                <td class="target-cell">${record.flow}</td>
                 <td>${record.internal_id}</td>
                 <td>${record.external_id}</td>
                 <td>${record.name}</td>
@@ -1271,7 +1288,7 @@ function renderTable() {
         tr.dataset.externalId = row.external_id;
         
         tr.innerHTML = `
-            <td>${row.flow}</td>
+            <td class="target-cell">${row.flow}</td>
             <td>${row.internal_id}</td>
             <td>${row.external_id}</td>
             <td>${row.name}</td>
@@ -1444,8 +1461,8 @@ function viewDetails(externalId) {
         document.getElementById('lineItemsTitle').textContent = 'Fulfillment Details';
         document.getElementById('lineItemsHeader').textContent = 'Fulfilled Lines';
         
-    } else if (currentTab === 'products' && record.matrix_type === 'PARENT') {
-        // Show child items for matrix products
+            } else if (currentTab === 'item' && record.matrix_type === 'PARENT') {
+            // Show child items for matrix items
         const childItems = sampleChildItems[externalId] || [];
         if (childItems.length > 0) {
             document.getElementById('lineItemsSection').style.display = 'block';
@@ -1539,7 +1556,7 @@ function populateLineItemsTable(lineItems) {
                                         <td>$${item.amount?.toFixed(2) || '0.00'}</td>
                                     `;
             } else {
-                // For other tabs (order, products), show all columns
+                // For other tabs (order, item), show all columns
                 row.innerHTML = `
                     <td>${item.internal_id || ''}</td>
                     <td>${item.item_id || ''}</td>
@@ -1652,7 +1669,7 @@ window.dashboardFunctions = {
 
 // Function to check if a record has line items
 function hasLineItems(externalId) {
-    if (currentTab === 'products') {
+            if (currentTab === 'item') {
         const record = sampleData[currentTab].find(r => r.external_id === externalId);
         return record && record.matrix_type === 'PARENT' && sampleChildItems[externalId];
     } else if (['order', 'fulfillment'].includes(currentTab)) {
@@ -1685,7 +1702,7 @@ function updateSummaryBoxes(data = null) {
 const filterOptions = {
     'Status': ['Ready', 'Success', 'Failed'],
     'Stage': ['Landed', 'Prepared', 'Target'],
-    'Flow': ['SHP → NS', 'NS → SHP'],
+    'Target': ['NetSuite', 'Shopify'],
     'External Id': ['SHP_CUST_001', 'SHP_CUST_002', 'SHP_ORD_001', 'SHP_ORD_002', 'NS_PROD_001', 'NS_PROD_002'],
     'Internal Id': ['CUST_001', 'CUST_002', 'ORD_001', 'ORD_002', 'PROD_001', 'PROD_002']
 };
@@ -1761,6 +1778,37 @@ function applyDynamicFilters() {
     applyFiltersWithDynamicFilters(activeFilters);
 }
 
+// Function to setup table row selection
+function setupTableRowSelection() {
+    // Add click event listeners to all table data cells
+    document.addEventListener('click', function(e) {
+        if (e.target.tagName === 'TD' && e.target.closest('.summary-table')) {
+            // Remove selection from all rows
+            document.querySelectorAll('.summary-table tbody tr').forEach(tr => {
+                tr.classList.remove('selected');
+            });
+
+            // Add selection to the row containing the clicked cell
+            const selectedRow = e.target.parentNode;
+            selectedRow.classList.add('selected');
+
+            // Optional: Add functionality to handle row selection
+            const rowIndex = selectedRow.rowIndex;
+            const columnIndex = Array.from(selectedRow.children).indexOf(e.target);
+            console.log('Row selected:', rowIndex, 'Cell clicked:', e.target.textContent, 'Column:', columnIndex);
+        }
+    });
+
+    // Remove selection when clicking outside table rows
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.summary-table') || e.target.tagName !== 'TD') {
+            document.querySelectorAll('.summary-table tbody tr').forEach(tr => {
+                tr.classList.remove('selected');
+            });
+        }
+    });
+}
+
 // Function to apply filters including dynamic ones
 function applyFiltersWithDynamicFilters(dynamicFilters) {
     const searchTerm = document.getElementById('searchInput').value.toLowerCase();
@@ -1813,7 +1861,7 @@ function applyFiltersWithDynamicFilters(dynamicFilters) {
                 case 'Stage':
                     matches = matches && record.stage === filter.value;
                     break;
-                case 'Flow':
+                case 'Target':
                     matches = matches && record.flow === filter.value;
                     break;
                 case 'External Id':
